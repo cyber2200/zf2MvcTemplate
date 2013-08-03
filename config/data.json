@@ -1,0 +1,39 @@
+{
+	"ENV" : "DEVELOPMENT",
+	"PRODUCTION" : 
+	{
+		"db1" : 
+		{
+			"username" : "testuser",
+			"password" : "Testpass",
+			"dbname" : "app1_prod",
+			"dbType" : "mysql",
+			"dbFile" : "",
+			"dbHost" : "localhost"
+		}
+	},
+	"STAGING" :
+	{
+		"db1" : 
+		{
+			"username" : "testuser1",
+			"password" : "Testpass1",
+			"dbname" : "app1_staging",
+			"dbType" : "mysql",
+			"dbFile" : "",
+			"dbHost" : "localhost"
+		}
+	},
+	"DEVELOPMENT" : 
+	{
+		"db1" : 
+		{
+			"username" : "testuser1",
+			"password" : "Testpass1",
+			"dbname" : "app1_dev",
+			"dbType" : "mysql",
+			"dbFile" : "",
+			"dbHost" : "localhost"
+		}
+	}
+}
