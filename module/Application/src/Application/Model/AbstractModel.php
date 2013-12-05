@@ -1,10 +1,12 @@
 <?php
 namespace Application\Model;
+use PDO;
 
 abstract class AbstractModel 
 {
 	protected $config;
 	protected $cwd;
+	protected $dbCon;
 	
     public function __construct()
     {
@@ -21,6 +23,27 @@ abstract class AbstractModel
 		else
 		{
 			$this->config = $jsonDataArr->PRODUCTION;
+		}
+		
+		switch ($this->config->db1->dbType)
+		{
+			case 'sqlite':
+				try
+				{
+					$this->dbCon = new PDO('sqlite:' . getcwd() . '/' . $this->config->db1->dbFile);
+					$this->dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				}
+				catch (Exception $ex)
+				{
+					print_r($ex);
+					die('');
+				}	
+			break;
+			case 'mysql':
+				/**
+				 * @ToDo
+				 */
+			break;
 		}
     }
 	

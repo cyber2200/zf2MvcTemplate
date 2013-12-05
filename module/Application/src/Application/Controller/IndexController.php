@@ -14,6 +14,7 @@ class IndexController extends AbstractActionController
 		
 		$viewModel = new ViewModel();
 		$viewModel->setVariable("modelOutput", $test1Model->modelTest());
+		$viewModel->setVariable("dbTest", $test1Model->getFromDbByKey('test1'));
 		return $viewModel;
     }
 	

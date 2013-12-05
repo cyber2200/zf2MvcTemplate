@@ -4,36 +4,36 @@
 	{
 		"db1" : 
 		{
+			"dbType" : "mysql",
+			"dbHost" : "localhost",
 			"username" : "testuser",
 			"password" : "Testpass",
 			"dbname" : "app1_prod",
-			"dbType" : "mysql",
-			"dbFile" : "",
-			"dbHost" : "localhost"
+			"dbFile" : ""
 		}
 	},
 	"STAGING" :
 	{
 		"db1" : 
 		{
+			"dbType" : "mysql",
+			"dbHost" : "localhost",
 			"username" : "testuser1",
 			"password" : "Testpass1",
 			"dbname" : "app1_staging",
-			"dbType" : "mysql",
-			"dbFile" : "",
-			"dbHost" : "localhost"
+			"dbFile" : ""
 		}
 	},
 	"DEVELOPMENT" : 
 	{
 		"db1" : 
 		{
+			"dbType" : "sqlite",
+			"dbHost" : "localhost",
 			"username" : "testuser1",
 			"password" : "Testpass1",
 			"dbname" : "app1_dev",
-			"dbType" : "mysql",
-			"dbFile" : "",
-			"dbHost" : "localhost"
+			"dbFile" : "db/test.db"
 		}
 	}
 }
