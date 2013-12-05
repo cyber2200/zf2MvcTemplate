@@ -1,13 +1,30 @@
 <html>
 
     <head>
-	<title>ZF2 Basics</title>
+		<title>ZF2 Basics</title>
+		<style>
+		body {
+			font-family: Arial;
+		}
+		
+		#nav {
+			text-align: center;
+			width: 100%;
+		}
+		</style>
     </head>
 
     <body>
-	<?php
-	echo $this->content;
-	?>
+		<div id="nav">
+			<a href="/">Application Module - Index Controller - index action</a> | 
+			<a href="/index/test">Application Module - Index Controller - test action</a> | 
+			<a href="/test">Application Module - Test Controller - index action</a>
+			<hr />
+			<br />
+		</div>
+		<?php
+		echo $this->content;
+		?>
     </body>
 
 </html>
