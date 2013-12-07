@@ -4,6 +4,7 @@ zf2MvcTemplate
 A sample ZF2 MVC template.
 
 Installation:
+
 1. Download or clone this project.
 
 2. Download Zend Framework from http://www.zend.com/en/company/community/downloads - tested with 2.2.5
