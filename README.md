@@ -15,4 +15,4 @@ Installation:
 
 5. In the "ZF2" directory create a new directory named "Zend".
 
-6. Copy the content ZendFramework-2.2.5/library/Zend from the Zend Framework 2 zip file.
+6. Copy the content ZendFramework-2.2.5/library/Zend from the Zend Framework 2 zip file into the vendor/ZF2/Zend directory.
